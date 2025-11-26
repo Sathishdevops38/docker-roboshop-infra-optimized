@@ -1,1 +1,2 @@
+#script to create images
 for i in mongodb mysql catalogue user cart  shipping payment frontend; do cd $i; docker build -t $i:v1 .;cd ..;done
